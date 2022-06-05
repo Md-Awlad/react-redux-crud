@@ -6,7 +6,7 @@ import { editBook } from "./BooksSlice";
 const EditBook = () => {
   const location = useLocation();
 
-  const [id, setId] = useState(location.state.id);
+  const [id] = useState(location.state.id);
   const [title, setTitle] = useState(location.state.title);
   const [author, setAuthor] = useState(location.state.author);
 
